@@ -1,0 +1,60 @@
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 6rem;
+  color: #e2e2e2;
+  margin-bottom: 4rem;
+}
+
+.btn {
+  font-size: 3rem;
+  padding: 1.5rem 3rem;
+  color: #fff;
+  background-color: coral;
+  border-radius: 0.6rem;
+  border: none;
+  margin: 1.25rem;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.8);
+  transition: 300ms ease;
+}
+
+.btn.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.btn:active {
+  transform: translateY(1px);
+}
+
+.count-result {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  border-radius: 10%;
+  font-size: 3rem;
+  color: #e2e2e2;
+  text-align: center;
+  padding: 2.2rem 1rem;
+  border: 1px solid coral;
+}
